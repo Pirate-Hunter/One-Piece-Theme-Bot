@@ -199,10 +199,7 @@ def start(update: Update, context: CallbackContext):
                          InlineKeyboardButton(
                              text="🔔 Updates Channel",
                              url="https://t.me/OnePieceUpdates")
-                     
-                     
-                  
-                     [
+                     ],
                          InlineKeyboardButton(
                              text="🗄 Source code",
                              url="https://github.com/Pirate-Hunter/One-Piece-Theme-Bot")
