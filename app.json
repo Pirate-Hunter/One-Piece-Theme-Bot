@@ -68,7 +68,7 @@
          "required": false,
          "value": "1214585391"
       },
-      "sw_api": {
+      "SPAMWATCH_API": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
          "required": false,
          "value": ""
@@ -143,6 +143,11 @@
          "description": "ID of the sticker you want to use when banning people.",
          "required": false,
          "value": "CAACAgQAAx0CU_rCTAABAczQXyBOv1TsVK4EfwnkCUT1H0GCkPQAAtwAAwEgTQaYsMtAltpEwhoE"
+      },
+      "WEBSS_API": {
+         "description": "You can get this at https://screenshotapi.net/",
+         "required": false,
+         "value": ""
       }
    },
    "keywords": [
@@ -150,7 +155,7 @@
       "anime",
       "group",
       "manager",
-      "Saitama"
+      "Luffy"
    ],
    "name": "One Piece Themed Bot",
    "repository": "https://github.com/Pirate-Hunter/One-Piece-Theme-Bot"
