@@ -7,4 +7,6 @@
 #pep8-ing the code doesn't change maker
 /SaitamaRobot/modules/paste.py @DragSama
 /SaitamaRobot/modules/speed_test.py @DragSama
-
+#Pirate-Hunter the changed the make 
+/OnePieceBot/modules/reverse.py @raki_12
+/OnePieceBot/modules/webss.py @notRyuk
