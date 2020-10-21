@@ -52,14 +52,14 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am an Anime themed group management bot.
+I am One Piece Themed anime group management bot.
 Build by weebs for weebs, I specialize in managing anime and similar themed groups.
 You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I help admins manage their groups with Bunny Girl Charm! 
+I help admins manage their groups with being King of the Pirates! 
 
 *Main* commands available:
  • /help: PM's you this message.
@@ -76,7 +76,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-LUFFY_IMG = "https://telegra.ph/NotRyuk-10-21"
+LUFFY_IMG = "https://telegra.ph/file/1f012aed1a79aed2b1d68.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
@@ -188,7 +188,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Add Mai Sakurajima to your group",
+                            text="☑️ Add Monkey D. Luffy to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
@@ -198,13 +198,10 @@ def start(update: Update, context: CallbackContext):
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
                              text="🔔 Updates Channel",
-                             url="https://t.me/OnePunchUpdates")
-                     ],
-                     [
-                         InlineKeyboardButton(
-                             text="Wanna know who I am? Click Here",
-                             url="https://t.me/bunny_girl_senpai_sub")
-                     ],
+                             url="https://t.me/OnePieceUpdates")
+                     
+                     
+                  
                      [
                          InlineKeyboardButton(
                              text="🗄 Source code",
