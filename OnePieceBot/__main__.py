@@ -206,7 +206,7 @@ def start(update: Update, context: CallbackContext):
                              text="🗄 Source code",
                              url="https://github.com/Pirate-Hunter/One-Piece-Theme-Bot")
                       ]
-                    ])
+                    ]))
     else:
         update.effective_message.reply_text(
             "I'm online!\n<b>Up since:</b> <code>{}</code>".format(uptime),
