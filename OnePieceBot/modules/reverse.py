@@ -185,4 +185,13 @@ REVERSE_HANDLER = DisableAbleCommandHandler(
     "reverse", reverse, pass_args=True, admin_ok=True
 )
 
+help_mod= []
+
+help= """
+*Reverse Search*: Searches about photos, gifs, short videos etc.
+• `/reverse`*:* When replied to photo/gif searches and replies with results
+"""
+
+help_mod.append(help)
+
 dispatcher.add_handler(REVERSE_HANDLER)
