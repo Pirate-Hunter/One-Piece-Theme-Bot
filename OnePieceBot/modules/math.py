@@ -3,7 +3,8 @@ import math
 import pynewtonmath as newton
 from OnePieceBot import dispatcher
 from OnePieceBot.modules.disable import DisableAbleCommandHandler
-from telegram import Update
+import OnePieceBot.modules.fun as FUN_MOD
+from telegram import Update 
 from telegram.ext import CallbackContext, run_async
 
 
@@ -112,8 +113,9 @@ def log(update: Update, context: CallbackContext):
     message.reply_text(math.log(int(args[0])))
 
 
-__help__ = """
-Solves complex math problems using https://newton.now.sh
+__help__ = FUN_MOD.help_mod[0]
+__help__ += """
+\nSolves complex math problems using https://newton.now.sh
  • `/math`*:* Math `/math 2^2+2(2)`
  • `/factor`*:* Factor `/factor x^2 + 2x`
  • `/derive`*:* Derive `/derive x^2+2x`
@@ -135,7 +137,7 @@ To find the area under a function, send the request as c:d|f(x) where c is the s
 To compute fractions, enter expressions as numerator(over)denominator. For example, to process 2/4 you must send in your expression as 2(over)4. The result expression will be in standard math notation (1/2, 3/4).
 """
 
-__mod_name__ = "Math"
+__mod_name__ = "Fun & Math"
 
 SIMPLIFY_HANDLER = DisableAbleCommandHandler("math", simplify)
 FACTOR_HANDLER = DisableAbleCommandHandler("factor", factor)
