@@ -183,8 +183,9 @@ def table(update: Update, context: CallbackContext):
     reply_text = update.effective_message.reply_to_message.reply_text if update.effective_message.reply_to_message else update.effective_message.reply_text
     reply_text(random.choice(fun_strings.TABLE))
 
-
-__help__ = """
+help_mod = []
+    
+help = """
  • `/runs`*:* reply a random string from an array of replies
  • `/slap`*:* slap a user, or get slapped if not a reply
  • `/shrug`*:* get shrug XD
@@ -199,6 +200,7 @@ __help__ = """
  • `/sanitize`*:* always use this before /pat or any contact
  • `/pat`*:* pats a user, or get patted
 """
+help_mod.append(help)
 
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
 RUNS_HANDLER = DisableAbleCommandHandler("runs", runs)
@@ -224,7 +226,7 @@ dispatcher.add_handler(RLG_HANDLER)
 dispatcher.add_handler(DECIDE_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
 
-__mod_name__ = "Fun"
+
 __command_list__ = [
     "runs", "slap", "roll", "toss", "shrug", "bluetext", "rlg", "decide",
     "table", "pat", "sanitize"
